@@ -1,21 +1,24 @@
-// src/Navbar.js
+//Navegador
 import React from "react";
-import "./Navbar.css"; // optional if you want separate styles
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">Mi Sitio</div>
+        <div className="logo">Bienvenidos!</div>
         <ul className="navbar-menu">
           <li>
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/about">Acerca de</a>
+            <a href="/eventos">Eventos</a>
           </li>
           <li>
-            <a href="/contact">Contacto</a>
+            <a href="/historia">Nuestra Historia</a>
+          </li>
+          <li>
+            <a href="/contact">Contactanos</a>
           </li>
         </ul>
       </div>

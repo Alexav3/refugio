@@ -5,9 +5,9 @@ import Navbar from "./Navbar";
 function App() {
   return (
     <div className="app-container">
-      <Navbar /> {/* 👈 use it here */}
+      <Navbar /> {}
       <h1>El Nuevo Refugio, Jalisco, México.</h1>
-      <p>Bienvenidos a la comunidad de El Nuevo Refugio, Jalisco.</p>
+      <h3>Bienvenidos a la comunidad de El Nuevo Refugio, Jalisco.</h3>
     </div>
   );
 }
