@@ -1,6 +1,10 @@
+/* Stylish Navbar */
 .navbar {
-  background-color: black;
-  padding: 10px 20px;
+  background-color: #111;
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar-container {
@@ -10,15 +14,17 @@
 }
 
 .logo {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
+  color: #f1c40f;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
@@ -26,11 +32,15 @@
 .navbar-menu li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .navbar-menu li a:hover {
-  color: #f1c40f;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+  background-color: #f1c40f;
+  color: #111;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
