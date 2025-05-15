@@ -1,5 +1,5 @@
-//Navegador
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -9,22 +9,22 @@ function Navbar() {
         <div className="logo">Bienvenidos!</div>
         <ul className="navbar-menu">
           <li>
-            <a href="/">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <a href="/eventos">Festividades</a>
+            <Link to="/eventos">Festividades</Link>
           </li>
           <li>
-            <a href="/historia">Nuestra Historia</a>
+            <Link to="/historia">Nuestra Historia</Link>
           </li>
           <li>
-            <a href="/lugares">Lugares importantes</a>
+            <Link to="/lugares">Lugares importantes</Link>
           </li>
           <li>
-            <a href="/galeria">Galeria</a>
+            <Link to="/galeria">Galeria</Link>
           </li>
           <li>
-            <a href="/contacto">Contactanos</a>
+            <Link to="/contacto">Contactanos</Link>
           </li>
         </ul>
       </div>
