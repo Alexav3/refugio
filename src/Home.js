@@ -5,7 +5,7 @@ import Footer from "./footer";
 
 function App() {
   return (
-    <div className="app-container">
+    <div>
       <h1>El Nuevo Refugio, Jalisco, México.</h1>
     </div>
   );
