@@ -3,10 +3,10 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./footer";
 import "./Eventos.css";
-import virgen from "./virgen.jpg";
-import semanaSanta from "./semanaSanta.jpg";
-import nacimiento from "./nacimiento.jpg";
-import sanJuan from "./sanJuan.jpg";
+import virgen from "./images/virgen.jpg";
+import semanaSanta from "./images/semanaSanta.jpg";
+import nacimiento from "./images/nacimiento.jpg";
+import sanJuan from "./images/sanJuan.jpg";
 
 export default function Eventos() {
   return (
