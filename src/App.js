@@ -5,6 +5,8 @@ import Home from "./Home";
 import Eventos from "./Eventos";
 import Historia from "./Historia";
 import Contacto from "./Contacto";
+import Lugares from "./Lugares";
+import Galeria from "./Galeria";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/eventos" element={<Eventos />} />
         <Route path="/historia" element={<Historia />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/lugares" element={<Lugares />} />
+        <Route path="/galeria" element={<Galeria />} />
       </Routes>
     </Router>
   );

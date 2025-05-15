@@ -1,6 +1,8 @@
 .event-page {
+  flex: 1;
   padding: 20px;
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .event-grid {
@@ -27,10 +29,17 @@
 
 .event-card h3 {
   margin-top: 10px;
+  margin-bottom: 2px;
   font-size: 18px;
+}
+
+.event-card h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .event-card p {
   font-size: 14px;
   color: #555;
+  text-align: left;
 }

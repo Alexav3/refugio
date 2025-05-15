@@ -19,25 +19,43 @@ export default function Eventos() {
           <img src={virgen} alt="Fiestas Patronales" />
           <h3>Fiestas Patronales</h3>
           <h5>4 de Julio.</h5>
-          <p>Descripción breve del evento 1.</p>
+          <p>
+            Cada 4 de julio se celebran en la comunidad de El Nuevo Refugio las
+            fiestas patronales en honor a la Virgen del Refugio. Esta festividad
+            se lleva a cabo año con año, siendo una de las más importantes del
+            pueblo.
+          </p>
         </div>
         <div className="event-card">
           <img src={semanaSanta} alt="Semana Santa" />
           <h3>Semana Santa.</h3>
           <h5>De acuerdo al calendario parroquial</h5>
-          <p>Descripción breve del evento 2.</p>
+          <p>
+            Cada año, la comunidad de El Nuevo Refugio conmemora la Semana Santa
+            con diversas actividades religiosas, incluyendo procesiones,
+            representaciones del Viacrucis y momentos de oración.
+          </p>
         </div>
         <div className="event-card">
           <img src={nacimiento} alt="Navidad" />
           <h3>Navidad</h3>
           <h5>25 de Diciembre.</h5>
-          <p>Celebración de la Navidad con actividades para la comunidad.</p>
+          <p>
+            Celebración de la Navidad con actividades religiosas y comunitarias.
+            Se realizan pastorelas, se canta al Niño Dios y se fomenta la
+            convivencia entre las familias del pueblo.
+          </p>
         </div>
         <div className="event-card">
           <img src={sanJuan} alt="Año Nuevo" />
           <h3>Peregrinacion a San Juan de los Lagos</h3>
           <h5>A principios de Enero.</h5>
-          <p>Evento especial para recibir el año nuevo juntos.</p>
+          <p>
+            Peregrinación que se realiza año con año hacia San Juan de los
+            Lagos, en devoción a la Virgen de San Juan. Es un evento especial
+            que une a la comunidad para encomendar el nuevo año con fe y
+            esperanza.
+          </p>
         </div>
         {/* Puedes agregar más tarjetas aquí */}
       </div>

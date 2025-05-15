@@ -18,7 +18,7 @@ function Navbar() {
             <a href="/historia">Nuestra Historia</a>
           </li>
           <li>
-            <a href="/lugares">Lugares interesantes</a>
+            <a href="/lugares">Lugares importantes</a>
           </li>
           <li>
             <a href="/galeria">Galeria</a>
