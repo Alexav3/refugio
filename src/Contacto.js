@@ -8,7 +8,7 @@ export default function Contacto() {
     <div>
       <Navbar />
       <h1>Contactanos</h1>
-      <p>En esta pagina formas de contacto con la adminitracion</p>
+      <p>En esta pagina formas de contacto con la administracion</p>
       <Footer />
     </div>
   );
