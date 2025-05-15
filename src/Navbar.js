@@ -18,7 +18,7 @@ function Navbar() {
             <a href="/historia">Nuestra Historia</a>
           </li>
           <li>
-            <a href="/contact">Contactanos</a>
+            <a href="/contacto">Contactanos</a>
           </li>
         </ul>
       </div>
