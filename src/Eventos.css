@@ -1,0 +1,36 @@
+.event-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.event-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.event-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.event-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.event-card p {
+  font-size: 14px;
+  color: #555;
+}

@@ -12,10 +12,16 @@ function Navbar() {
             <a href="/">Inicio</a>
           </li>
           <li>
-            <a href="/eventos">Eventos</a>
+            <a href="/eventos">Festividades</a>
           </li>
           <li>
             <a href="/historia">Nuestra Historia</a>
+          </li>
+          <li>
+            <a href="/lugares">Lugares interesantes</a>
+          </li>
+          <li>
+            <a href="/galeria">Galeria</a>
           </li>
           <li>
             <a href="/contacto">Contactanos</a>

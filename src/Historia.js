@@ -7,7 +7,7 @@ export default function Historia() {
     <div>
       <Navbar />
       <h1>Historia del rancho</h1>
-      <p>En esta pagina inlcuiremos nuestra historia</p>
+      <p>En esta pagina incluiremos nuestra historia</p>
     </div>
   );
 }
