@@ -11,7 +11,6 @@ import sanJuan from "./images/sanJuan.jpg";
 export default function Eventos() {
   return (
     <div className="event-page">
-      <Navbar />
       <h1>Fechas importantes.</h1>
       <p>La comunidad de El Nuevo Refugio celebra las siguientes fechas.</p>
       <div className="event-grid">
@@ -59,7 +58,6 @@ export default function Eventos() {
         </div>
         {/* Puedes agregar más tarjetas aquí */}
       </div>
-      <Footer />
     </div>
   );
 }

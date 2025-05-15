@@ -6,13 +6,11 @@ import Footer from "./footer";
 export default function Galeria() {
   return (
     <div>
-      <Navbar />
       <h1>Galeria de fotos</h1>
       <p>
         En esta pagina incluiremos una galeria de fotos o media relacionado al
         nuevo refugio
       </p>
-      <Footer />
     </div>
   );
 }

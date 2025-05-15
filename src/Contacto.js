@@ -6,10 +6,8 @@ import Footer from "./footer";
 export default function Contacto() {
   return (
     <div>
-      <Navbar />
       <h1>Contactanos</h1>
       <p>En esta pagina formas de contacto con la administracion</p>
-      <Footer />
     </div>
   );
 }
