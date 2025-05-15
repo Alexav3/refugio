@@ -1,39 +1,56 @@
+// Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">Bienvenidos!</div>
-        <button
-          className="menu-toggle"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
+        <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
-        <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
+        <ul className={`navbar-menu ${menuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/">Inicio</Link>
+            <Link to="/" onClick={closeMenu}>
+              Inicio
+            </Link>
           </li>
           <li>
-            <Link to="/eventos">Festividades</Link>
+            <Link to="/eventos" onClick={closeMenu}>
+              Festividades
+            </Link>
           </li>
           <li>
-            <Link to="/historia">Nuestra Historia</Link>
+            <Link to="/historia" onClick={closeMenu}>
+              Nuestra Historia
+            </Link>
           </li>
           <li>
-            <Link to="/lugares">Lugares importantes</Link>
+            <Link to="/lugares" onClick={closeMenu}>
+              Lugares importantes
+            </Link>
           </li>
           <li>
-            <Link to="/galeria">Galeria</Link>
+            <Link to="/galeria" onClick={closeMenu}>
+              Galeria
+            </Link>
           </li>
           <li>
-            <Link to="/contacto">Contactanos</Link>
+            <Link to="/contacto" onClick={closeMenu}>
+              Contactanos
+            </Link>
           </li>
         </ul>
       </div>
