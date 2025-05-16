@@ -19,7 +19,7 @@ main {
 .app-container {
   text-align: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: white;
   min-height: 300px;
   margin-top: 70px;
 }

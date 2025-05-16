@@ -4,7 +4,9 @@ import "./Home.css";
 function Home() {
   return (
     <div className="home-container">
-      <h1>El Nuevo Refugio, Jalisco, México.</h1>
+      <header>
+        <h1>El Nuevo Refugio, Jalisco, México.</h1>
+      </header>
     </div>
   );
 }
