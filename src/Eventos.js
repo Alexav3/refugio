@@ -1,7 +1,5 @@
 // src/Event.js
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./footer";
 import "./Eventos.css";
 import virgen from "./images/virgen.jpg";
 import semanaSanta from "./images/semanaSanta.jpg";

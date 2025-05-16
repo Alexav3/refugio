@@ -1,14 +1,30 @@
 import React from "react";
-import "./App.css";
-import Navbar from "./Navbar";
-import Footer from "./footer";
+import "./Home.css";
+import plaza from "./images/plaza.jpg";
+import hacienda from "./images/hacienda.jpg";
 
-function App() {
+function Home() {
+  const images = [plaza, hacienda];
+  const [current, setCurrent] = React.useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
+
   return (
-    <div>
+    <div className="home-container">
       <h1>El Nuevo Refugio, Jalisco, México.</h1>
+      <div className="slider">
+        <button onClick={prevSlide}>⟨</button>
+        <img src={images[current]} alt={`Foto ${current + 1}`} />
+        <button onClick={nextSlide}>⟩</button>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Home;

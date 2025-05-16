@@ -1,14 +1,47 @@
-.app-container {
+.home-container {
   text-align: center;
-  padding: 20px;
   background-color: #f0f0f0;
+  padding-top: 80px; /* to avoid navbar overlap */
 }
 
-h1 {
+/* Heading style */
+.home-container h1 {
   color: #2c3e50;
+  margin-bottom: 20px;
 }
 
-h3 {
-  font-size: 18px;
-  color: #34495e;
+/* Slider layout */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Make image responsive and full width */
+.slider img {
+  width: 1200px;
+  height: 700px;
+  display: blocl;
+}
+
+/* Navigation arrows */
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider button:first-of-type {
+  left: 10px;
+}
+
+.slider button:last-of-type {
+  right: 10px;
 }
