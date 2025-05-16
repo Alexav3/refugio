@@ -14,14 +14,16 @@
 .slider {
   position: relative;
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
-/* Make image responsive and full width */
+/* Make image responsive */
 .slider img {
-  width: 1200px;
-  height: 700px;
-  display: blocl;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
 }
 
 /* Navigation arrows */
@@ -44,4 +46,17 @@
 
 .slider button:last-of-type {
   right: 10px;
+}
+
+/* Optional: Media query for smaller screens */
+@media (max-width: 600px) {
+  .slider button {
+    font-size: 1.5rem;
+    padding: 6px;
+  }
+
+  .home-container h1 {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
 }
