@@ -6,7 +6,25 @@ import semanaSanta from "./images/semanaSanta.jpg";
 import nacimiento from "./images/nacimiento.jpg";
 import sanJuan from "./images/sanJuan.jpg";
 
+function getDaysRemaining(month, day) {
+  const today = new Date();
+  const year = today.getFullYear();
+  let targetDate = new Date(year, month - 1, day); // month is 0-based
+
+  // If the date has already passed this year, use next year
+  if (today > targetDate) {
+    targetDate = new Date(year + 1, month - 1, day);
+  }
+
+  const diffTime = targetDate - today;
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  return diffDays;
+}
+
 export default function Eventos() {
+  const diasFiestasPatronales = getDaysRemaining(7, 4); // 4 de julio
+  const diasNavidad = getDaysRemaining(12, 25); // 25 de diciembre
+
   return (
     <div className="event-page">
       <h1>Fechas importantes.</h1>
@@ -15,7 +33,10 @@ export default function Eventos() {
         <div className="event-card">
           <img src={virgen} alt="Fiestas Patronales" />
           <h3>Fiestas Patronales</h3>
-          <h5>4 de Julio.</h5>
+          <h5>
+            4 de Julio —{" "}
+            <strong>Próximamente en: {diasFiestasPatronales} días.</strong>
+          </h5>
           <p>
             Cada 4 de julio se celebran en la comunidad de El Nuevo Refugio las
             fiestas patronales en honor a la Virgen del Refugio. Esta festividad
@@ -36,7 +57,10 @@ export default function Eventos() {
         <div className="event-card">
           <img src={nacimiento} alt="Navidad" />
           <h3>Navidad</h3>
-          <h5>25 de Diciembre.</h5>
+          <h5>
+            25 de Diciembre —{" "}
+            <strong>Próximamente en: {diasNavidad} días.</strong>
+          </h5>
           <p>
             Celebración de la Navidad con actividades religiosas y comunitarias.
             Se realizan pastorelas, se canta al Niño Dios y se fomenta la
@@ -45,7 +69,7 @@ export default function Eventos() {
         </div>
         <div className="event-card">
           <img src={sanJuan} alt="Año Nuevo" />
-          <h3>Peregrinacion a San Juan de los Lagos</h3>
+          <h3>Peregrinación a San Juan de los Lagos</h3>
           <h5>A principios de Enero.</h5>
           <p>
             Peregrinación que se realiza año con año hacia San Juan de los
@@ -54,7 +78,6 @@ export default function Eventos() {
             esperanza.
           </p>
         </div>
-        {/* Puedes agregar más tarjetas aquí */}
       </div>
     </div>
   );
