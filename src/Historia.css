@@ -1,0 +1,21 @@
+.historia {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.historia h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #1a1a1a;
+}
+
+.historia p {
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
