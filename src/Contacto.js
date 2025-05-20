@@ -1,6 +1,7 @@
 // src/Contacto.js
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
+import Navbar from "./Navbar";
 import "./Contacto.css";
 
 export default function Contacto() {
@@ -15,6 +16,7 @@ export default function Contacto() {
 
   return (
     <div className="contact-container">
+      <Navbar />
       <h1 className="contact-title">Contáctanos</h1>
       <p className="contact-text">Encuéntranos en: </p>
       <ul className="contact-list">

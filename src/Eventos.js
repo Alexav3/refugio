@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Eventos.css";
+import Navbar from "./Navbar";
 import virgen from "./images/virgen.jpg";
 import semanaSanta from "./images/semanaSanta.jpg";
 import nacimiento from "./images/nacimiento.jpg";
@@ -60,6 +61,7 @@ export default function Eventos() {
 
   return (
     <div className="event-page">
+      <Navbar />
       <h1>Fechas importantes.</h1>
       <p>La comunidad de El Nuevo Refugio celebra las siguientes fechas.</p>
       <div className="event-grid">

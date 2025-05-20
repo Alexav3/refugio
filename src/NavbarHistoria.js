@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./NavbarHistoria.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,33 +28,18 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/eventos" onClick={closeMenu}>
-              Festividades
+            <Link to="/historia/fundacion" onClick={closeMenu}>
+              Fundacion
             </Link>
           </li>
           <li>
-            <Link to="/historia" onClick={closeMenu}>
-              Nuestra Historia
+            <Link to="/historia/archivohistorico" onClick={closeMenu}>
+              Archivo Historico
             </Link>
           </li>
           <li>
-            <Link to="/nuestragente" onClick={closeMenu}>
-              Nuestra Gente
-            </Link>
-          </li>
-          <li>
-            <Link to="/lugares" onClick={closeMenu}>
-              Lugares importantes
-            </Link>
-          </li>
-          <li>
-            <Link to="/galeria" onClick={closeMenu}>
-              Galeria
-            </Link>
-          </li>
-          <li>
-            <Link to="/contacto" onClick={closeMenu}>
-              Contactanos
+            <Link to="/historia/testimonios" onClick={closeMenu}>
+              Testimonios
             </Link>
           </li>
         </ul>

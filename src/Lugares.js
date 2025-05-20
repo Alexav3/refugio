@@ -1,12 +1,14 @@
 // src/Lugares.js
 import React from "react";
 import "./Lugares.css";
+import Navbar from "./Navbar";
 import hacienda from "./images/hacienda.jpg";
 import plaza from "./images/plaza.jpg";
 
 export default function Lugares() {
   return (
     <div className="lugares-container">
+      <Navbar />
       <h1>Lugares Importantes</h1>
 
       <div className="image-text-grid">

@@ -9,52 +9,15 @@
   color: #2c3e50;
   margin-bottom: 20px;
 }
-
-/* Slider layout */
-.slider {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* Make image responsive */
-.slider img {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-}
-
-/* Navigation arrows */
-.slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.slider button:first-of-type {
-  left: 10px;
-}
-
-.slider button:last-of-type {
-  right: 10px;
+.home-container p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  text-align: left;
 }
 
 /* Optional: Media query for smaller screens */
 @media (max-width: 600px) {
-  .slider button {
-    font-size: 1.5rem;
-    padding: 6px;
-  }
-
   .home-container h1 {
     font-size: 1.2rem;
     padding: 0 10px;
