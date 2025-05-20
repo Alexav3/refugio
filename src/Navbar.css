@@ -1,6 +1,6 @@
 /* Base navbar */
 .navbar {
-  background-color: #f5f5f5;
+  background-color: #ddf6d2;
   width: 100%;
   padding: 0;
   border-radius: 0;
@@ -50,7 +50,7 @@
 }
 
 .navbar-menu li a:hover {
-  background-color: #f1c40f;
+  background-color: #b0db9c;
   color: #111;
 }
 
