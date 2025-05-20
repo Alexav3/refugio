@@ -8,9 +8,6 @@ export default function Lugares() {
   return (
     <div className="lugares-container">
       <h1>Lugares Importantes</h1>
-      <p>
-        En esta página incluiremos los lugares importantes para la comunidad.
-      </p>
 
       <div className="image-text-grid">
         <div className="image-text-box">
